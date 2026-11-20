@@ -9,7 +9,7 @@ public class Variables {
         boolean isLearningJava = true;
         char firstLetter = 'M';
         final String COUNTRY = "Вьетнам";
-        
+
         System.out.println("Возраст: " + age);
         System.out.println("Рост: " + height);
         System.out.println("Учу Java: " + isLearningJava);
