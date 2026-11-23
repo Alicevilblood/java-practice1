@@ -1,9 +1,10 @@
-public class Bird extends Animal {
+public class Bird extends Animal implements Flyable{
     public Bird(String name) {
         super(name);
     }
 
-    void fly() {
+    @Override
+    public void fly() {
         System.out.println(name + " летает!");
     }
 

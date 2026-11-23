@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     protected String name;
 
     public Animal(String name) {
@@ -8,7 +8,6 @@ public class Animal {
     void eat() {
         System.out.println(name + " ест.");
     }
-    void makeSound(){
-        System.out.println(name + " издает звук.");
-    }
+
+    abstract void makeSound();
 }
