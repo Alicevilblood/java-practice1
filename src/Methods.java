@@ -1,6 +1,7 @@
 public class Methods {
     public static void main(String[] args) {
         printGreeting("Алиса");
+        printGreeting("Алиса", 25);
         int result = multiply(5, 10);
         System.out.println(result);
         System.out.println(isEven(4));
@@ -13,6 +14,10 @@ public class Methods {
 
     public static void printGreeting(String name) {
         System.out.println("Привет, " + name + "! Учим Java");
+    }
+
+    public static void printGreeting(String name, int age) {
+        System.out.println("Привет, " + name + ". Тебе " + age + " лет!");
     }
 
     public static int multiply(int a, int b) {
