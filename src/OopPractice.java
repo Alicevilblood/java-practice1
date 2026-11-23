@@ -23,5 +23,16 @@ public class OopPractice {
         samsung.printInfo();
         nokia.applyDiscount(130);
         nokia.printInfo();
+
+        Dog yety = new Dog("Йети");
+        yety.eat();
+        yety.bark();
+        Bird stesha = new Bird("Стеша");
+        stesha.eat();
+        stesha.fly();
+        Animal pet = new Dog("Йети");
+        pet.makeSound();
+        Animal bird = new Bird("Стеша");
+        bird.makeSound();
     }
 }
