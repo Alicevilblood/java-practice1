@@ -3,15 +3,25 @@ public class OopPractice {
         Cat yota = new Cat("Йота", 6);
         Cat busa = new Cat("Буся", 4);
 
+        yota.haveBirthday();
+        yota.printInfo();
+        busa.haveBirthday();
+        busa.printInfo();
         yota.meow();
         busa.meow();
-        System.out.println(yota.name + " - возраст: " + yota.age);
-        System.out.println(busa.name + " - возраст: " + busa.age);
 
         Student alice = new Student("Алиса", 5);
         Student gosha = new Student("Гоша", 3);
 
         alice.printInfo();
         gosha.printInfo();
+
+        Phone samsung = new Phone("Samsung", 30000);
+        Phone nokia = new Phone("Nokia", 15000);
+
+        samsung.applyDiscount(10);
+        samsung.printInfo();
+        nokia.applyDiscount(130);
+        nokia.printInfo();
     }
 }
