@@ -21,7 +21,11 @@ public class OopPractice {
 
         samsung.applyDiscount(10);
         samsung.printInfo();
-        nokia.applyDiscount(130);
+        try {
+            nokia.applyDiscount(130);
+        } catch (IllegalArgumentException e){
+            System.out.println("Ошибка: " + e.getMessage());
+        }
         nokia.printInfo();
 
         Dog yety = new Dog("Йети");

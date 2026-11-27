@@ -11,7 +11,7 @@ public class Phone {
         if (percent >= 0 && percent <= 100) {
             price = price - price * percent / 100;
         } else {
-            System.out.println("Неверная скидка!");
+            throw new IllegalArgumentException("Неверная скидка " + percent);
         }
     }
 
